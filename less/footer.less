@@ -1,0 +1,27 @@
+footer {
+    background-color: @dr-blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0%;
+
+    @media @tablet {
+        padding: 1.5% 0%;
+    }
+
+    @media @phone {
+        padding: 4% 0%;
+    }
+
+    a {
+        font-size: 1.75rem;
+        color: @dr-secondary;
+        width: auto;
+        text-decoration: none;
+        transition: color .5s;
+
+        &:hover {
+            color: white;
+            transition: color .5s;
+        }
+    }
+}

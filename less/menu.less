@@ -1,0 +1,60 @@
+
+.menu-holder {
+  z-index: 2;
+  position: absolute;
+  left: 5rem;
+  width: 7.5%;
+  cursor: pointer;
+  
+  .burger-button {
+   
+    border: .2rem solid @dr-blue;
+    border-radius: 10%;
+    background-color: @dr-blue;
+    color: @dr-secondary;
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    top: 4rem;
+    position: absolute; 
+
+  }
+  .menu-content {
+    width: 15rem;
+    position: absolute;
+    background-color: @dr-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    top: 8.5rem;
+    border: 2rem, solid white;
+    border-radius: 0% 5% 5% 5%;
+    animation: fadein .5s;
+    
+  }
+  .menu-link {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .menu-hidden {
+    display: none;
+   
+}
+
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+

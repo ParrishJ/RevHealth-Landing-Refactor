@@ -1,0 +1,40 @@
+.thirdBodyIndex {
+    display: flex;
+
+    @media @phone {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 4rem;
+        padding: 5% 7% 1% 7%;
+        font-weight: bold;
+
+        @media @tablet {
+            padding: 8% 7% 3% 7%;
+        }
+
+        @media @phone {
+            padding: 10% 10% 5% 10%;
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        padding: 1% 7% 7% 7%;
+        line-height: 3.2rem;
+
+        @media @tablet {
+            padding: 1% 7% 12% 7%;
+        }
+
+        @media @phone {
+            padding: 2% 10% 10% 10%;
+        }
+    }
+
+    img {
+        width: 20%;
+        height: auto;
+    }
+}
